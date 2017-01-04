@@ -1,0 +1,8 @@
+.main-content{
+    background-image: url(/app/assets/images/chatroomsbg.png);
+    height: 20rem;
+    width: 20rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}

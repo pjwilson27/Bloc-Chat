@@ -1,6 +1,6 @@
 (function(){
     function HomeCtrl(){
-        
+        this.mainContent = "Testing!"
     }
     
     angular
