@@ -3,16 +3,9 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Chat</title>
-    <link rel="stylesheet" type="text/css" href="/app/styles/style.css">
     <link rel="stylesheet" type="text/css" href="/app/styles/home.css">
 </head>
 <body>
-    <nav class="listing">
-        <h3 class="bloc-chat">Bloc Chat</h3>
-    </nav>
-    <div class="main-content">
-        <a ui-sref="home"></a>
-    </div>
 
 <ui-view></ui-view>
 
@@ -29,14 +22,14 @@
   };
   firebase.initializeApp(config);
 </script>
-<!--Angular-->
+<!--Outside files-->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
-<!--Firebase-->    
 <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
-<!--AngularFire-->
 <script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>  
 <!--Internal files to be linked-->
 <script src="/app/scripts/app.js"></script>
+<script src="/app/scripts/services/rooms.js"></script>
 <script src="/app/scripts/controllers/HomeCtrl.js"></script>
 </body>
 </html>

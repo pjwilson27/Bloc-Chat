@@ -1,8 +1,19 @@
-.main-content{
-    background-image: url(/app/assets/images/chatroomsbg.png);
-    height: 20rem;
-    width: 20rem;
+.listing {
+    width: 15rem;
+    height: 80rem;
+    font-family: sans-serif;
+    opacity: .80;
+    position: fixed;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+.main-content {
+	background-image: url(/app/assets/images/chatroomsbg.png);
     background-repeat: no-repeat;
-    background-position: center center;
     background-attachment: fixed;
+    position: center;
+    
 }

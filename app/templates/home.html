@@ -1,1 +1,15 @@
-<section class="main-content"></section>
+<nav class="listing">
+<div class="col-md-3 sidebar">
+    <h3>Bloc Chat</h3>
+    <p>Chat with the world</p>    
+        <section class="rooms-list">
+            <div ng-repeat="room in home.chatRooms" class="chatrooms">
+                <p>{{ room.home.name }}</p>
+            </div>
+        </section>
+    </div>
+</nav>
+<section class="main-content">
+<div class="inner-content"></div>
+</section>
+
