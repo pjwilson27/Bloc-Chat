@@ -4,6 +4,6 @@
     }
     
     angular
-        .module('blocChat');
+        .module('blocChat')
         .controller('HomeCtrl',['$firebaseArray', 'Room', HomeCtrl]);
 })
