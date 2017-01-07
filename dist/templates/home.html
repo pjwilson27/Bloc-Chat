@@ -1,10 +1,12 @@
+<head>
+<link rel="stylesheet" type="text/css" href="/styles/home.css">
+</head>
 <nav class="listing">
-<div class="col-md-3 sidebar">
     <h3>Bloc Chat</h3>
     <p>Chat with the world</p>    
         <section class="rooms-list">
             <div ng-repeat="room in home.chatRooms" class="chatrooms">
-                <p>{{ room.name }}</p>
+                <p>{{ rooms.room }}</p>
             </div>
         </section>
     </div>
