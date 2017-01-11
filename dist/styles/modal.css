@@ -1,6 +1,7 @@
-.create-room {
+.create-room p {
 	border: dashed 1px black;
     position: relative;
-    margin-right: auto;
-    
+    width: 5px;
+    height: 5px;
+    display: block;
 }
