@@ -10,12 +10,7 @@
             .state('home', {
                    url: '/',
                    controller: 'HomeCtrl as home',
-                   templateURL: '/templates/home.html'
-            })
-            .state('modal', {
-                url: '/scripts/controllers/ModalCtrl.js',
-                controller: 'ModalCtrl as modal',
-                templateURL: '/templates/Modal.html'
+                   templateUrl: '/templates/home.html'
         });
         
     }
