@@ -11,7 +11,6 @@
         };
         
         this.close = function(){
-            console.log("Working");
             if($scope.name === undefined){
                 $scope.$close();
             }else{
@@ -21,7 +20,6 @@
         };
         
         this.dismiss = function(){
-            console.log("Working");
             $scope.$dismiss();
         };
     }

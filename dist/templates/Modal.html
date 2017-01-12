@@ -1,1 +1,12 @@
-SOMEBODY PAY ATTENTION TO MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+<div class="create-room">
+    <button class="button" ng-controller="modals" ng-click="modal.open()">New Chatroom</button>
+</div>
+<div class="modal-body">
+    <div class="form-group">
+        <input type="text" class="form-control" ng-model="newRoom.name">
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="create" type="button" ng-click="ModalCtrl.close()">Create</button>
+    <button class="cancel" type="button" ng-click="ModalCtrl.dismiss()">Cancel</button>
+</div>

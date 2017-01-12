@@ -5,6 +5,7 @@
         //rooms = ["room1", "room2", "room3"];
         
         var create = function($scope, name){
+            var firebaseTry = URL("https://bloc-chat-fab00.firebaseio.com");
             rooms.$add(name);
         }
         

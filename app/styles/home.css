@@ -16,3 +16,12 @@
     background-attachment: fixed;
     position: center;
 }
+
+.tagline {
+	color: darkgreen;
+    text-decoration: underline;
+}
+
+.heading {
+	text-align: left;
+}
