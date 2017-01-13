@@ -9,10 +9,9 @@
                     name: $scope.newRoomName
                 };
 
-            Room.create(newRoom).then(function(){
+                Room.create(newRoom)
                 $scope.newRoom.name = '';
                 $uibModalInstance.close();
-            });
 
             } else {
                 alert("You need to name the room!");
