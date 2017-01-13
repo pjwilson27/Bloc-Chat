@@ -3,23 +3,10 @@
         this.chatRooms = Room.all;
         
         this.openModal = function() {
-            var instantModal = $uibModal.open({
+            $uibModal.open({
                 templateUrl: '/templates/Modal.html',
-                controller: function($scope, $uibModalInstance) {
-                    $scope.newRoom = {name: ''};
-                    $scope.cancel = function() {
-                        $uibModalInstance.dismiss('cancel');
-                    };
-                    
-                    $scope.create = function() {
-                        $uibModalInstance.close($scope.newRoom);
-                    };
-                },
-                size:'lg'
-            });
-            
-            instantModal.result.then(function(data){
-                Room.addRoom(data);
+                controller: 'ModalCtrl',
+                size: 'sm'
             });
         };
     }

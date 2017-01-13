@@ -1,30 +1,30 @@
 (function(){
-    function ModalCtrl($scope, $uibModal, Room){
-        this.room = Room;
+    function ModalCtrl($scope, $uibModalInstance, Room){
         
-        this.open = function() {
-            $uibModal.open({
-                templateUrl: '/templates/Modal.html',
-                controller: 'ModalCtrl',
-                controllerAs: 'modal'
+        $scope.newRoom = {};
+        
+        $scope.createNewRoom = function(){
+            if(!$scope.newRoom.name || $scope.newRoom.name !== ''){
+                var newRoom = {
+                    name: $scope.newRoomName
+                };
+
+            Room.create(newRoom).then(function(){
+                $scope.newRoom.name = '';
+                $uibModalInstance.close();
             });
-        };
-        
-        this.close = function(){
-            if($scope.name === undefined){
-                $scope.$close();
-            }else{
-                this.room.create($scope, $scope.name);
-                $scope.$close();
+
+            } else {
+                alert("You need to name the room!");
             }
         };
         
-        this.dismiss = function(){
-            $scope.$dismiss();
+        $scope.cancel = function(){
+            $uibModalInstance.close('cancel');
         };
     }
     
     angular
         .module('blocChat')
-        .controller('ModalCtrl', ['$scope', '$uibModal', 'Room', ModalCtrl]);
+        .controller('ModalCtrl', ['$scope', '$uibModalInstance', 'Room', ModalCtrl]);
 })();

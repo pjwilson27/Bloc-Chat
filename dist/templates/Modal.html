@@ -1,12 +1,11 @@
-<div class="create-room">
-    <button class="button" ng-controller="modals" ng-click="modal.open()">New Chatroom</button>
-</div>
+<div class="pop-up-window">
 <div class="modal-body">
     <div class="form-group">
-        <input type="text" class="form-control" ng-model="newRoom.name">
+        <input type="text" class="form-control" placeholder="Enter A Room Name..." ng-model="newRoomName">
     </div>
 </div>
 <div class="modal-footer">
-    <button class="create" type="button" ng-click="ModalCtrl.close()">Create</button>
-    <button class="cancel" type="button" ng-click="ModalCtrl.dismiss()">Cancel</button>
+    <button class="create" type="button" ng-click="createNewRoom()">Create</button>
+    <button class="cancel" type="button" ng-click="cancel()">Cancel</button>
+</div>
 </div>

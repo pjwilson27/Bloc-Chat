@@ -1,9 +1,12 @@
 <nav class="listing">
-    <h3 class="heading">Bloc Chat</h3>
-    <p class="tagline">Chat with the world</p>
-        <section class="rooms-list">
-            <div ng-repeat="room in home.chatRooms" class="chatrooms">
-                <p>{{ room }}</p>
-            </div>
-        </section>
+    <div class="main-content">
+        <h3 class="heading">Bloc Chat</h3>
+        <button class="button" ng-click="home.openModal()">New Chatroom</button>
+        <p class="tagline">Chat with the world</p>
+    </div>
+    <section class="rooms-list">
+        <div ng-repeat="room in home.chatRooms" class="chatrooms">
+            <p>{{ room.$value }}</p>
+        </div>
+    </section>
 </nav>

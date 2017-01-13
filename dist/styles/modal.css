@@ -1,7 +1,8 @@
-.button {
-	border: dashed 1px black;
-    position: relative;
-    width: 5px;
-    height: 5px;
-    display: block;
+.pop-up-window {
+	height: 10px;
+    width: 20%;
+    background-image: url("/app/assets/images/chatroomsbg.png");
+    position: center;
+    float: left;
+    padding: 30%;  
 }

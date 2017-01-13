@@ -10,18 +10,17 @@
     background-color: lightgrey;
 }
 
-.main-content {
-	background-image: url("/app/assets/images/chatroomsbg.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: center;
-}
 
 .tagline {
 	color: darkgreen;
     text-decoration: underline;
+    text-align: center;
 }
 
 .heading {
-	text-align: left;
+	text-align: center;
+}
+
+.button:hover {
+	color:gold;
 }
