@@ -6,7 +6,7 @@
     </div>
     <section class="rooms-list">
         <div ng-repeat="room in home.chatRooms" class="chatrooms">
-            <a ng-click="this.activeRoom(room)">{{ room.name }}</a>
+            <a ng-click="home.activeRoom(room)">{{ room.$value }}</a>
         </div>
     </section>
 </nav>
