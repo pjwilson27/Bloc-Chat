@@ -21,7 +21,7 @@ console.log("created!");
         
         $scope.cancel = function(){
             $uibModalInstance.close('cancel');
-console.log("completed");
+console.log("process aborted!");
         };
     }
     

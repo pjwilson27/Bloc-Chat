@@ -10,14 +10,6 @@
     background-color: lightgrey;
 }
 
-<<<<<<< HEAD
-.main-content {
-	background-image: url("/assets/images/chatroomsbg.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: center;
-=======
-
 .tagline {
 	color: darkgreen;
     text-decoration: underline;
@@ -30,5 +22,9 @@
 
 .button:hover {
 	color:gold;
->>>>>>> create-chatroom
+}
+
+.chat-content {
+    text-align: center;
+    padding-left: 15%;
 }

@@ -7,12 +7,11 @@
         }
         return {
             all: rooms,
-            create: create,
-            getMessages: getMessages
+            create: create
         };
     }
     
     angular
         .module('blocChat')
-        .factory('Room', ['$firebaseArray', 'Messages', Room]);
+        .factory('Room', ['$firebaseArray', Room]);
 })();
