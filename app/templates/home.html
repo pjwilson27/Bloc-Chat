@@ -1,17 +1,4 @@
 <nav class="listing">
-<<<<<<< HEAD
-    <h3>Bloc Chat</h3>
-    <p>Chat with the world</p>    
-        <section class="rooms-list">
-            <div ng-repeat="room in home.chatRooms" class="chatrooms">
-                <p>{{ room }}</p>
-            </div>
-        </section>
-</nav>
-<section class="main-content">
-</section>
-
-=======
     <div class="main-content">
         <h3 class="heading">Bloc Chat</h3>
         <button class="button" ng-click="home.openModal()">New Chatroom</button>
@@ -19,8 +6,11 @@
     </div>
     <section class="rooms-list">
         <div ng-repeat="room in home.chatRooms" class="chatrooms">
-            <p>{{ room.$value }}</p>
+            <a ng-click="this.activeRoom(room)">{{ room.name }}</a>
         </div>
     </section>
 </nav>
->>>>>>> create-chatroom
+<div class="chat-content">
+    <h3>{{this.activeRoom.name}}</h3>
+    <p>{{message.username}}: {{message.content}}:{{message.sentAt}}</p>
+</div>

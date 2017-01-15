@@ -12,6 +12,7 @@
                 Room.create(newRoom)
                 $scope.newRoom.name = '';
                 $uibModalInstance.close();
+console.log("created!");
 
             } else {
                 alert("You need to name the room!");
@@ -20,6 +21,7 @@
         
         $scope.cancel = function(){
             $uibModalInstance.close('cancel');
+console.log("completed");
         };
     }
     

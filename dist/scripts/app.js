@@ -17,8 +17,4 @@
     angular
         .module('blocChat', ['ui.router', 'firebase', 'ui.bootstrap'])
         .config(config);
-<<<<<<< HEAD
-})(); 
-=======
 })();
->>>>>>> create-chatroom

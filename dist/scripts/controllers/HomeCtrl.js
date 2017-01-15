@@ -1,10 +1,10 @@
 (function(){
-<<<<<<< HEAD
-    function HomeCtrl(Room){
-        this.chatRooms = Room.all;
-=======
     function HomeCtrl(Room, $uibModal){
         this.chatRooms = Room.all;
+        this.activeRoom = function(room){
+            this.activeRoom = room;
+            this.messages = Room.getMessages(this.activeRoom.$id);
+        }
         
         this.openModal = function() {
             $uibModal.open({
@@ -13,14 +13,9 @@
                 size: 'sm'
             });
         };
->>>>>>> create-chatroom
     }
     
     angular
         .module('blocChat')
-<<<<<<< HEAD
-        .controller('HomeCtrl',['Room', HomeCtrl]);
-=======
         .controller('HomeCtrl', ['Room', '$uibModal', HomeCtrl]);
->>>>>>> create-chatroom
 })();
