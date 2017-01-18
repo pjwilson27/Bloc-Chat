@@ -3,11 +3,11 @@
         var messageRef =$firebaseArray(firebaseRef.child('messages'));
         
         function getMessages(roomId) {
-            return messageRef.orderByChild('roomID').equalTo(roomId);
+            //return messageRef.orderByChild('roomID').equalTo(roomId);
         }
         
     }
     angular
         .module('blocChat')
-        .controller('Room', ['$firebaseArray', Room]);
+        .factory('Message', ['$firebaseArray', Message]);
 })();
