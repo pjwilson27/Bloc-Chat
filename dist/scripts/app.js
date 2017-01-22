@@ -15,6 +15,6 @@
     }
     
     angular
-        .module('blocChat', ['ui.router', 'firebase', '$cookies', 'ui.bootstrap'])
+        .module('blocChat', ['ui.router', 'firebase', 'ngCookies', 'ui.bootstrap'])
         .config(config);
 })();
