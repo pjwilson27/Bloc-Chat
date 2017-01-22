@@ -6,9 +6,9 @@
         }
         $scope.messages = null;
         
-        $scope.setCurrentRoom = function(room){
-            $scope.currentRoom = room;
-            $scope.messages = Message(room.$id);        
+        this.setCurrentRoom = function(room){
+            this.currentRoom = room;
+            this.messages = Room.getByRoomId(this.currentRoom.$id);        
         };
         
         this.openModal = function() {
