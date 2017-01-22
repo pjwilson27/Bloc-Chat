@@ -8,7 +8,7 @@
         
         $scope.setCurrentRoom = function(room){
             $scope.currentRoom = room;
-            $scope.messages = Room.getMessages(room.$id);        
+            $scope.messages = Message(room.$id);        
         };
         
         this.openModal = function() {
