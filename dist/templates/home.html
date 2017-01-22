@@ -6,11 +6,11 @@
     </div>
     <section class="rooms-list">
         <div ng-repeat="room in home.chatRooms" class="chatrooms">
-            <a ng-click="this.activeRoom(room)">{{ room.name }}</a>
+            <a class="list-link" ng-click="setCurrentRoom(room)">{{ room.name }}</a>
         </div>
     </section>
 </nav>
 <div class="chat-content">
-    <h3>{{ this.activeRoom.name }}</h3>
+    <h3>{{ room.name }}</h3>
     <p>{{ messages.username }}: {{ messages.content }}:{{ messages.sentAt }}</p>
 </div>

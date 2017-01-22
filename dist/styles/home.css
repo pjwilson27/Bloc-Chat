@@ -28,3 +28,8 @@
     text-align: center;
     padding-left: 15%;
 }
+
+.list-link:hover {
+	color: blue;
+    cursor: pointer;
+}
