@@ -10,7 +10,7 @@
         </div>
     </section>
 </nav>
-<div class="chat-content">
+<div class="chat-content" ng-repeat="message in home">
     <h3>{{ room.name }}</h3>
     <p>{{ messages.username }}: {{ messages.content }}:{{ messages.sentAt }}</p>
 </div>
