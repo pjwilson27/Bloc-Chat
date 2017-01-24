@@ -33,3 +33,19 @@
 	color: blue;
     cursor: pointer;
 }
+
+.new-message {
+	position: fixed;
+    float: right;
+    padding-top: 75%;
+    padding-left: 25%;
+}
+
+.send-button {
+	opacity: 1;
+}
+
+.send-button:hover {
+	opacity: .75;
+    color: red;
+}

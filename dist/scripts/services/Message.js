@@ -8,8 +8,16 @@
 console.log("working up to here");                
                 $firebaseArray(ref.orderByChild('roomID').equalTo(roomId));
 console.log("All the way through now!");
+            },
+            send: function(newMessage) {
+                messages.$add({
+                    username: $cookies.blocChatCurrentUser,
+                    content: newMessage,
+                    sentAt: 'date time',
+                    roomId: roomId
+                });
             }
-        }
+        };
         
     }
     angular

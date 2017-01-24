@@ -3,7 +3,7 @@
         $scope.setUsername = function() {
             $cookies.blocChatCurrentUser = $scope.newUsername;
             
-            $uibModalInstance.close();
+            $uibModalInstance.close($cookies.blocChatCurrentUser);
         };
     }
     

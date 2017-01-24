@@ -14,3 +14,7 @@
     <h3>{{ room.name }}</h3>
     <p>{{ messages.username }}: {{ messages.content }}:{{ messages.sentAt }}</p>
 </div>
+<div class="new-message" ng-show="currentRoom">
+    {{ currentUser }}: <input ng-model="newMessage">
+    <button class="send-button" type="button" ng-click="sendMessage(currentRoom)">Send</button>
+</div>
