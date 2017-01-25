@@ -4,7 +4,7 @@
         if(!currentUser || currentUser === ''){
             $uibModal.open({
                 templateUrl: '/templates/Cookie.html',
-                controller: '/scripts/controllers/CookieCtrl',
+                controller: 'CookieCtrl',
                 size: 'sm'
             })
         }

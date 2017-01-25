@@ -27,8 +27,7 @@
             Message.send($scope.newMessage, room.$id);
         };
         
-        return $scope.rooms;
-        
+          return this;
     }
     
     angular
