@@ -20,11 +20,11 @@
         this.setCurrentRoom = function(room){
             $scope.currentRoom = room;
             $scope.messages = Room.getByRoomId(this.currentRoom.$id);
-            $scope.currentUser = $cookies.blocChatCurrentUser;
+            $scope.currentUser = $cookies.get('blocChatCurrentUser');
         };
         
         $scope.sendMessage = function(room) {
-            Message.send($scope.newMessage, room.$id);
+            Message.send($scope.newMessage, $scope.roomId);
         };
         
           return this;

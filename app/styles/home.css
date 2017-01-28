@@ -27,6 +27,7 @@
 .chat-content {
     text-align: center;
     padding-left: 15%;
+    position: relative;
 }
 
 .list-link:hover {
@@ -35,10 +36,10 @@
 }
 
 .new-message {
-	position: fixed;
+	position: relative;
     float: right;
     padding-top: 75%;
-    padding-left: 25%;
+    padding-left: 55%;
 }
 
 .send-button {
