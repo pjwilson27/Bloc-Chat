@@ -5,18 +5,24 @@
         
         return {
             getByRoomId: function(roomId) { 
-                var data = ref.orderByChild('roomID').equalTo(roomId);
+                var data = ref.orderByChild('roomId').equalTo(roomId);
                 var messages = $firebaseArray(data);
+                console.log(messages);
   //              return messages;
-                return $firebaseArray(ref.orderByChild('roomId').equalTo(roomId));
+                return messages;
             },
-            send: function(newMessage, roomId) {
+            send: function(newMessage) {
+                console.log("being called");
                 messages.$add({
                     username: $cookies.blocChatCurrentUser,
                     content: newMessage,
                     sentAt: 'date time',
                     roomId: roomId
                 });
+                return Message;
+                console.log(newMessage);
+                
+            console.log("being returned");
             }
         };
         

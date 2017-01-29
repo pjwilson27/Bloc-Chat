@@ -1,9 +1,8 @@
 .listing {
     width: 15rem;
-    height: 80rem;
+    height: 56rem;
     font-family: sans-serif;
     opacity: .80;
-    position: fixed;
     color: black;
     font-size: 1.5rem;
     text-align: center;
@@ -38,12 +37,11 @@
 .new-message {
 	position: relative;
     float: right;
-    padding-top: 75%;
-    padding-left: 55%;
 }
 
 .send-button {
 	opacity: 1;
+    float: right;
 }
 
 .send-button:hover {

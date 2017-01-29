@@ -5,8 +5,10 @@
             $uibModal.open({
                 templateUrl: '/templates/Cookie.html',
                 controller: 'CookieCtrl',
-                size: 'sm'
-            })
+                size: 'sm',
+                keyboard: false,
+                backdrop: 'static'
+            });
         }
     }
     

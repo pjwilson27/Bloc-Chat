@@ -1,12 +1,13 @@
+<section class="pop-up-window">
 <div class="modal-header">
     <h3 class="title">Enter Your Username...</h3>
 </div>
 <div class="modal-body">
      <div class="form-group">
-         <h4 class="modal-prompt">Enter A Username</h4>
         <input type="text" placeholder="Username here" class="form-control" ng-model="newUsername">
      </div>
 </div>
 <div class="modal-footer">
-    <button class="user-create" type="button" ng-click="setUsername()">Create</button>
+    <button class="user-create" type="button" ng-click="this.setUsername()">Create</button>
 </div>
+</section>
