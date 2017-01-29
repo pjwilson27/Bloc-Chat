@@ -12,13 +12,9 @@
                 return messages;
             },
             send: function(newMessage) {
-                console.log("being called");
-                messages.$add({
-                    username: $cookies.blocChatCurrentUser,
-                    content: newMessage,
-                    sentAt: 'date time',
-                    roomId: roomId
-                });
+                console.log(newMessage);
+                messages.$add(newMessage);
+                
                 return Message;
                 console.log(newMessage);
                 

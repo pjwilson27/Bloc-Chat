@@ -17,16 +17,16 @@
             });
         };
         this.setCurrentRoom = function(room){
-            $scope.currentRoom = room;
+            this.currentRoom = room;
             console.log(room);
-            $scope.messages = Message.getByRoomId(room.$id);
-            $scope.currentUser = $cookies.get('blocChatCurrentUser');
+            this.messages = Message.getByRoomId(room.$id);
+            this.currentUser = $cookies.get('blocChatCurrentUser');
         };
         
-        $scope.sendMessage = function() {
-            $scope.newMessage.roomId = this.currentRoom.$id;
-            $scope.newMessage.username = this.currentUser
-            Message.send($scope.newMessage);
+        this.sendMessage = function() {
+            this.newMessage.roomId = this.currentRoom.$id;
+            this.newMessage.username = this.currentUser
+            Message.send(this.newMessage);
         };
         
           return this;
