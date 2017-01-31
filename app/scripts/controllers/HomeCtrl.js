@@ -1,11 +1,8 @@
 (function(){
     function HomeCtrl($scope, Room, $uibModal, $cookies, Message){
-//        $scope.messages = null;
-//        $scope.currentUser = null;
         this.rooms = Room.all;
         this.currentRoom = null;
         this.currentUser = $cookies.get('blocChatCurrentUser');
-//        this.chatRooms = Room.all;
         
         this.openModal = function() {
             $uibModal.open({
@@ -22,7 +19,6 @@
         this.setCurrentRoom = function(room){
             this.currentRoom = room;
             this.messages = Message.getByRoomId(this.currentRoom.$id);
-            console.log(this.messages);
         };
         
         this.sendMessage = function() {

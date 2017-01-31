@@ -1,8 +1,12 @@
 (function() {
     function CookieCtrl($scope, $uibModalInstance, $cookies, Room) {
-        $scope.setUsername = function() {
-            $cookies.blocChatCurrentUser = $scope.newUsername;
-            $uibModalInstance.close($cookies.blocChatCurrentUser);
+        this.setUsername = function() {
+            $cookies.put('blocChatCurrentUser', this.username);
+            if(this.username === undefined || null) {
+                alert("Please enter a username to continue!");
+            } else {
+            $uibModalInstance.close();
+            }
         };
     }
     
