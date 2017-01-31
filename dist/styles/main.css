@@ -1,0 +1,108 @@
+/*html {
+    height: 100%;
+    font-size: 100%;
+}*/
+
+body {
+    background-color: white;
+}
+
+/*Navigation*/
+
+.listing {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 20%;
+    height: 100%;
+    background-color: lightgray;
+    z-index: 1;
+}
+
+.listing-header {
+    padding-left: 10px;
+    margin-bottom: 5px;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tagline {
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+.nr-button {
+    margin: 0 5px;
+}
+
+.listing-title {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.list-link {
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.list-link:hover {
+    cursor: pointer;
+}
+
+/*Messages*/
+
+.message-ref {
+    position: fixed;
+    top: 0px;
+    left: 250px;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    overflow: scroll;
+}
+
+
+.chat-content {
+    padding-right: 10px;
+}
+
+.chat-username {
+    font-weight: bold;
+}
+
+.timing {
+    float: right;
+    padding-right: 100px;
+}
+
+.chat-content .chat-username .timing {
+    display: inline-block;
+}
+
+.message-content {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.new-message {
+    bottom: 0;
+    padding-bottom: 5px;
+    position: fixed;
+}
+
+.typing-field {
+    width: 800px;
+}
+
+.room-title {
+	text-decoration: underline;
+    color: forestgreen;
+}
+
+.pop-up-window {
+    padding-left: 70%;
+}

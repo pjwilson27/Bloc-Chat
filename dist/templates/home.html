@@ -1,7 +1,7 @@
 <nav class="listing">
-    <div class="main-content">
-        <h3 class="heading">Bloc Chat</h3>
-        <button class="button" ng-click="home.openModal()">New Chatroom</button>
+    <div class="listing-header">
+        <h3 class="listing-title">Bloc Chat</h3>
+        <button class="nr-button" ng-click="home.openModal()">New Chatroom</button>
         <p class="tagline">Chat with the world</p>
     </div>
     <section class="rooms-list">
@@ -10,13 +10,15 @@
         </div>
     </section>
 </nav>
-<div class="chat-content" ng-repeat="message in home.messages">
-    <h3 class="room-title">{{ home.currentRoom.name }}</h3>
-    <div class="chat-username">{{ message.username}}</div>
-    <div class="message-content">{{ message.content }}</div>
-    <div class="timing">{{ message.sentAt | date: "shortTime" }}</div>
-</div>
-<div class="new-message">
-    <input type="text" name="input" placeholder="Say something!" class="typing-field" ng-model="home.newMessage.content">
-    <button class="send-button" type="button" ng-click="home.sendMessage()">Send</button>
-</div>
+<section class="message-ref">
+    <div class="chat-content" ng-repeat="message in home.messages">
+        <h3 class="room-title">{{ home.currentRoom.name }}</h3>
+        <div class="chat-username">{{ message.username}}</div>
+        <div class="message-content">{{ message.content }}</div>
+        <div class="timing">{{ message.sentAt | date: "shortTime" }}</div>
+    </div>
+    <div class="new-message">
+        <input type="text" name="input" placeholder="Say something!" class="typing-field" ng-model="home.newMessage.content">
+        <button class="send-button" type="button" ng-click="home.sendMessage()">Send</button>
+    </div>
+</section>
