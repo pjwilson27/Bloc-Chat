@@ -12,7 +12,7 @@
 </nav>
 <div class="chat-content" ng-repeat="message in home.messages">
     <h3 class="room-title">{{ home.currentRoom.name }}</h3>
-    <div class="username">{{ message.username}}</div>
+    <div class="chat-username">{{ message.username}}</div>
     <div class="message-content">{{ message.content }}</div>
     <div class="timing">{{ message.sentAt | date: "shortTime" }}</div>
 </div>

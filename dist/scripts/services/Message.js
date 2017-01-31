@@ -12,8 +12,8 @@
                 return messages;
             },
             send: function(newMessage) {
-                messages.$add(newMessage);
                 newMessage.sentAt = firebase.database.servervalue.timeStamp;
+                messages.$add(newMessage);
             }
         };
         

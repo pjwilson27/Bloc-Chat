@@ -68,8 +68,15 @@
     cursor: pointer;
 }
 
-.username {
+.chat-username {
 	font-weight: bold;
+}
+.message-content {
+	display: inline-block;
+}
+
+.timing {
+	float: right;
 }
 
 .room-title {
