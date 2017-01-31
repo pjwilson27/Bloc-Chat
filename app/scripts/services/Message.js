@@ -12,13 +12,12 @@
                 return messages;
             },
             send: function(newMessage) {
-                console.log(newMessage);
+                console.log("going going...");
                 messages.$add(newMessage);
-                
+                console.log("being returned");
+                console.log(newMessage);
                 return Message;
                 console.log(newMessage);
-                
-            console.log("being returned");
             }
         };
         

@@ -1,13 +1,11 @@
 (function(){
     function HomeCtrl($scope, Room, $uibModal, $cookies, Message){
-        $scope.messages = null;
-        $scope.currentUser = null;
-        $scope.rooms = Room;
-        $scope.currentRoom = null;
-        this.chatRooms = Room.all;
-        this.activeRoom = function(room){
-            this.activeRoom = room;
-        }
+//        $scope.messages = null;
+//        $scope.currentUser = null;
+        this.rooms = Room.all;
+        this.currentRoom = null;
+        this.currentUser = $cookies.get('blocChatCurrentUser');
+//        this.chatRooms = Room.all;
         
         this.openModal = function() {
             $uibModal.open({
@@ -16,11 +14,15 @@
                 size: 'sm'
             });
         };
+        this.activeRoom = function(room){
+            this.activeRoom = room;
+        }        
+
+        
         this.setCurrentRoom = function(room){
             this.currentRoom = room;
-            console.log(room);
-            this.messages = Message.getByRoomId(room.$id);
-            this.currentUser = $cookies.get('blocChatCurrentUser');
+            this.messages = Message.getByRoomId(this.currentRoom.$id);
+            console.log(this.messages);
         };
         
         this.sendMessage = function() {

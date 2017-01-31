@@ -5,13 +5,13 @@
         <p class="tagline">Chat with the world</p>
     </div>
     <section class="rooms-list">
-        <div ng-repeat="room in home.chatRooms" class="chatrooms">
+        <div ng-repeat="room in home.rooms" class="chatrooms">
             <p class="list-link" ng-click="home.setCurrentRoom(room)">{{ room.name }}</p>
         </div>
     </section>
 </nav>
 <div class="chat-content" ng-repeat="message in home.messages">
-    <h3>{{ room.name }}</h3>
+    <h3 style="text-align:center;">{{ home.currentRoom.name }}</h3>
     <p>{{ messages.username }}: {{ messages.content }}:{{ messages.sentAt }}</p>
 </div>
 <div class="new-message">
