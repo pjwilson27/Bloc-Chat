@@ -11,7 +11,6 @@
                 return messages;
             },
             send: function(newMessage) {
-                newMessage.sentAt.toUTCString();
                 messages.$add(newMessage);
             }
         };
